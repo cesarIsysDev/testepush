@@ -1,0 +1,1 @@
+self.addEventListener("push",(t=>{const o=t.data.json();console.log("New notification",o);const i={body:o.body};t.waitUntil(self.registration.showNotification(o.title,i))}));
